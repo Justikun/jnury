@@ -1,0 +1,365 @@
+:root {
+    /* fonts */
+    --primary-font: "Source Code Pro", monospace;
+    --secondary-font: "Work Sans", sans-serif;
+    --font-white-1: #EEEEEE;
+    --font-white-2: #BFC0C0;
+    --font-hover-1: #F37375;
+    --font-weight-bold: 700;
+
+    /* backgrounds */
+    --primary-background-color: #151515;
+    --secondary-background-color: #1f1f1f;
+
+    /* view */
+    --max-width: 1150px;
+}
+
+body {
+    margin: 0 0;
+    background: #151515;
+    font-family: var(--primary-font);
+    font-size: 18px;
+    color: var(--font-white-1);
+    letter-spacing: 0.05rem;
+}
+
+p {
+    font-family: var(--secondary-font);
+    font-weight: 300;
+}
+
+.navbar-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-image: url('/background-assets/background-strip.webp');
+    background-size: cover;
+    /* Makes the image cover the entire div */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    max-width: var(--max-width);
+}
+
+.navbar-brand {
+    /* empty */
+}
+
+.brand-logo {
+    width: 140px;
+    margin-right: 4rem;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 1.1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: var(--font-white-1);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.nav-link:hover {
+    color: var(--font-hover-1);
+}
+
+
+/* HOME HERO SECTION */
+.home-hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 21rem;
+    background-color: var(--primary-background-color);
+}
+
+.home-hero-item {
+    display: flex;
+    width: var(--max-width);
+}
+
+.home-hero-text {
+    font-size: 1.9rem;
+    font-family: var(--primary-font);
+    font-weight: normal;
+    color: var(--font-white-1);
+}
+
+
+/* JNURY QUICK QUESTIONS SECTION */
+.jnury-quick-questions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background-assets/desktop-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.jnury-quicky-questions-item-wrapper {
+    margin: 0;
+    padding: 0px;
+}
+
+.jnury-quick-questions-item {
+    width: var(--max-width);
+}
+
+.jnury-quick-questions-item h1 {
+    color: var(--font-white-1);
+}
+
+.jnury-quick-questions-card-container {
+    margin: 0;
+    padding: 0;
+}
+
+.jnury-quick-questions-card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jnury-quick-questions-card-row {
+    display: flex;
+    flex-direction: row;
+    width: var(--max-width);
+}
+
+.jnury-quick-questions-divider {
+    width: 4rem;
+}
+
+.jnury-quick-questions-card {
+    flex-basis: 100%;
+    background-color: rgba(0, 0, 0, 0.54);
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+
+
+/* LATEST PROJECTS SECTION */
+
+.latest-projects-section-container {
+    padding: 5rem;
+}
+
+.latest-projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 4rem; */
+}
+
+.latest-projects-row {
+    display: flex;
+    flex-direction: row;
+    width: var(--max-width);
+}
+
+.latest-projects-divider {
+    width: 4rem;
+}
+
+.latest-projects-card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    width: 1rem;
+    background-color: var(--secondary-background-color);
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.latest-projects-card h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.latest-projects-card img {
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* MEDIA QUERY FOR MOBILE DEVICES */
+
+@media only screen and (max-width: 600px) {
+
+    /* HOME HERO SECTION */
+    .home-hero-container {
+        height: 14rem;
+        margin: 0 1rem;
+        padding: 0;
+    }
+
+    /* JNURY QUICK QUESTIONS SECTION */
+    .jnury-quick-questions-container {
+        background-image: url('/background-assets/mobile-bg.jpg');
+        background-position: top;
+        background-repeat: repeat;
+        background-size: contain;
+        margin: 0;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .jnury-quicky-questions-item-wrapper {
+        padding: 0;
+        margin: 0;
+    }
+
+    .jnury-quick-questions-item {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .jnury-quick-questions-item h1 {
+        font-size: 1.6rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
+    .jnury-quick-questions-item p {
+        font-size: 1.1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+    .jnury-quick-questions-card-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+        margin-left: .7rem;
+        margin-right: .7rem;
+    }
+
+    .jnury-quick-questions-card-row {
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .jnury-quick-questions-divider {
+        width: 0rem;
+        height: 1.5rem;
+    }
+
+    .jnury-quick-questions-card {
+        flex-basis: 100%;
+        background-color: rgba(0, 0, 0, 0.54);
+        border-radius: 5px;
+        padding: 1.5rem;
+    }
+
+    .jnury-quick-questions-card h1 {
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+        margin-bottom: .5rem;
+    }
+
+    .jnury-quick-questions-card p {
+        font-size: 1.1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    /* LATEST PROJECTS SECTION */
+
+    .latest-projects-section-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .latest-projects-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 1rems;
+    }
+
+    .latest-projects-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin: 3rem;
+    }
+
+    .latest-projects-divider {
+        margin: 0;
+        padding: 0;
+        height: 1.5rem;
+    }
+
+    .latest-projects-card {
+        flex-basis: 100%;
+        width: 100%;
+        background-color: var(--secondary-background-color);
+        border-radius: 5px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .latest-projects-card h1 {
+        font-size: 2rem;
+        padding: 0;
+        margin: 1rem;
+        margin-bottom: 0;
+    }
+
+    .latest-projects-card p {
+        font-size: 1.1rem;
+        padding: 0;
+        margin: 1rem;
+        margin-bottom: 0;
+    }
+
+    .latest-projects-card img {
+        object-fit: contain;
+        border-radius: 5px;
+        padding: 0rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+    }
+}
